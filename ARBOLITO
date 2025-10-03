@@ -1,0 +1,28 @@
+package primerspassos;
+
+import java.util.Scanner;
+
+public class Arbolito {
+    public static void main(String[] args) {
+        Scanner ent = new Scanner(System.in);
+        double c1, c2, k1, k2, k3;
+        int contador = 0;
+
+        c1 = ent.nextDouble();
+        c2 = ent.nextDouble();
+        k1 = ent.nextDouble();
+        k2 = ent.nextDouble();
+        k3 = ent.nextDouble();
+
+        if (k1 > c1 && k1 < c2) ++contador;
+        if (k2 > c1 && k2 < c2) ++contador;
+        if (k3 > c1 && k3 < c2) ++contador;
+
+        System.out.println(contador);
+        ent.close();
+
+    }
+
+
+}
+
